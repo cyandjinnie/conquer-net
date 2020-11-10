@@ -1,0 +1,31 @@
+ul.vertical_menu {
+	margin: 0;
+	padding: 60px 0px;
+}
+
+ul.vertical_menu li {
+	display: block;
+	padding: 3px;
+	text-align: center;
+	background-color: #f0eeff;
+	color: #725aff;
+	font-size: 24px;
+}
+
+ul.vertical_menu li {
+	display: block;
+	padding: 3px;
+	text-align: center;
+	background-color: #f0eeff;
+	color: #725aff;
+	font-size: 24px;
+}
+
+ul.vertical_menu li.active {
+	color: #f0eeff;
+	background-color: #725aff;
+}
+
+.vertical_menu_opts {
+	
+}
