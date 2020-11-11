@@ -1,0 +1,16 @@
+#chat_window>div {
+	width: 500px;
+}
+
+hr {
+	width: 420px;
+	vertical-align: bottom;
+	margin: 0;
+	height: 0;
+	float: right;
+	border-color: rgba(0, 0, 0, 0.2);
+}
+
+.chat_element {
+	height: 2px;
+}

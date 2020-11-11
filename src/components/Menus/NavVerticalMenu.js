@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import './NavVerticalMenu.css'
 
@@ -11,11 +11,11 @@ class NavVerticalMenu extends React.Component {
     };
 
     render() {
-        let options = ["Chats", "Events", "Departments"];
+        let options = ["Chats", "About"];
         const active = this.active;
 
         function render_single(opt) {
-            return <li><Link to={"/" + opt.toLowerCase()}>{opt}</Link></li>;
+            return <li><NavLink to={"/" + opt.toLowerCase()} activeClassName="active">{opt}</NavLink></li>;
         }
 
         return (

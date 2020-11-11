@@ -1,0 +1,10 @@
+.about_text_container {
+	width: 500px;
+	height: 600px;
+	padding: 15px;
+}
+
+.about_header_strip {
+	width: 100%;
+	height: 100px;
+}

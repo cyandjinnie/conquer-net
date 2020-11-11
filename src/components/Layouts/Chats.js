@@ -1,15 +1,25 @@
 import React from 'react'
-import '../Layout.css'
+
+import {Switch, Route} from 'react-router-dom'
+import ChatsIndex from './ChatsIndex.js'
+import Chat from './Chat.js'
+
+import './Chats.css'
 
 class Chats extends React.Component {
     constructor(props) {
         super(props);
-        this.section = "Chats"
     }
 
     render() {
         return (
-            <div></div>
+            <div id="chat_window">
+				<div class="chat_meta"></div>
+                    <Switch>
+                        <Route exact path="/chats" component={ChatsIndex}/>
+                        <Route exact path="/chats/:id" component={Chat}/>
+                    </Switch>
+            </div>
         );
     }
 }

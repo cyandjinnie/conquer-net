@@ -9,7 +9,7 @@ class Departments extends React.Component {
 
     render() {
         return (
-            <div></div>
+            <div>Departments</div>
         );
     }
 }

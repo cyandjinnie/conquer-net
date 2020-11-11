@@ -1,0 +1,49 @@
+.chat_input_window {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	background-color: #eeeeee;
+	height: 80px;
+	width: 500px;
+}
+
+.message_box {
+	width: 500px;
+	height: auto;
+	min-height: 50px;
+}
+
+.message_box>p {
+	padding: 10px;
+	margin: 2px;
+	background-color: rgba(100, 100, 120, 0.05);
+}
+
+.chat_dialogue_title {
+	height: 55px;
+	background-color: #eeeeee;
+}
+
+.message_box.incoming>p {
+	float: left;
+}
+
+.message_box.outcoming>p {
+	float: right;
+}
+
+.title_wrapper {
+	padding: 12px 20px;
+	display: inline-block;
+}
+
+.title_wrapper>h2 {
+	margin: 0;
+}
+
+.status_bar_wrapper {
+	height: 50px;
+	width: 200px;
+	float: right;
+}

@@ -4,9 +4,7 @@ import './MainWindow.css'
 class MainWindow extends React.Component {
     render() {
         return (
-            <div>
-                Kek;
-            </div>
+            <div>Kek</div>
         );
     }
 }

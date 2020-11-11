@@ -1,0 +1,30 @@
+#chat_window {
+	background-color: rbg(220, 220, 220);
+	height: 600px;
+	overflow: auto;
+}
+
+.chat_meta {
+    height: 35px;
+    width: 500px;
+	background-color: #dddddd;
+}
+
+.status_bar {
+	display: inline-block;
+	width: 125px;
+	height: 20px;
+	padding: 0;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.dark {
+	border: 2px solid #dddddd;
+	background-color: #dddddd;
+}
+
+.light {
+	border: 2px solid #ffffff;
+	background-color: #ffffff;
+}

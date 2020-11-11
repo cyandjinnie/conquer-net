@@ -5,14 +5,13 @@ ul.vertical_menu {
 
 ul.vertical_menu li {
 	display: block;
-	padding: 3px;
 	text-align: center;
 	background-color: #f0eeff;
 	color: #725aff;
 	font-size: 24px;
 }
 
-ul.vertical_menu li {
+ul.vertical_menu li a {
 	display: block;
 	padding: 3px;
 	text-align: center;
@@ -21,11 +20,11 @@ ul.vertical_menu li {
 	font-size: 24px;
 }
 
-ul.vertical_menu li.active {
+ul.vertical_menu li a.active {
 	color: #f0eeff;
 	background-color: #725aff;
 }
 
 .vertical_menu_opts {
-	
+
 }
