@@ -14,7 +14,7 @@ class Chats extends React.Component {
     render() {
         return (
             <div id="chat_window">
-				<div class="chat_meta"></div>
+				<div className="chat_meta"></div>
                     <Switch>
                         <Route exact path="/chats" component={ChatsIndex}/>
                         <Route exact path="/chats/:id" component={Chat}/>

@@ -3,10 +3,19 @@
 	src: url("./fonts/IBMPlexSans-Regular.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: "Lucida Grande";
+	src: url("./fonts/LucidaGrande.ttf") format("truetype");
+}
+
 body {
 	font-family: "IBM Plex Sans";
 	background-image: linear-gradient(to right, #aa0047, #1f0094);
 }
+
+/* h1,h2,h3,h4,p,span,a {
+	font-family: "Lucida Grande";
+} */
 
 a {
 	color: black;

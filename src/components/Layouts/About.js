@@ -2,15 +2,11 @@ import React from 'react'
 import './About.css'
 
 class About extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
-            <div class="about_text_container">
-                <div class="about_header_strip">
-                    <div class="center">
+            <div className="about_text_container">
+                <div className="about_header_strip">
+                    <div className="center">
                         <h2>About</h2>
                     </div>
                 </div>

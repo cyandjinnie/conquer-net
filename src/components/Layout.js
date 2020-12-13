@@ -2,22 +2,18 @@ import React from 'react'
 import './Layout.css'
 import Nav from './Nav.js'
 import MainWindow from './MainWindow.js'
-import {BrowserRouter, BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Chats from './Layouts/Chats.js'
 import Events from './Layouts/Events.js'
 import Departments from './Layouts/Departments.js'
 import About from './Layouts/About.js'
 
 class Layout extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
-            <div class="wrapper">
+            <div className="wrapper">
                 <Nav/>
-                <div class="wide_column">
+                <div className="wide_column">
                     <Switch>
                         <Route path="/departments" component={Departments}/>
                         <Route path="/chats" component={Chats}/>

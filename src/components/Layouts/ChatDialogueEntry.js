@@ -13,24 +13,24 @@ class ChatDialogueEntry extends React.Component {
         return (
             <div>
                 <Link to={"/chats/" + this.props.id}>
-                    <div class="chat_dialoque">
-                        <div class="chat_image_wrapper">
-                            <div class="center">
-                                <div class="chat_image"></div>
+                    <div className="chat_dialoque">
+                        <div className="chat_image_wrapper">
+                            <div className="center">
+                                <div className="chat_image"></div>
                             </div>
                         </div>
-                        <div class="chat_text_wrapper">
-                            <div class="chat_title">{ this.props.title }</div>
+                        <div className="chat_text_wrapper">
+                            <div className="chat_title">{ this.props.title }</div>
 
-                            <div class="chat_details">
-                                <span class="status_bar dark">
-                                    <span class="status_indicator" style={{"background-color": this.props.status_color}}></span>
-                                    <span class="details_text_wrapper">
+                            <div className="chat_details">
+                                <span className="status_bar dark">
+                                    <span className="status_indicator" style={{"backgroundColor": this.props.status_color}}></span>
+                                    <span className="details_text_wrapper">
                                         { this.props.status_string }
                                     </span>
                                     
                                 </span>
-                                <span class="chat_header_msg">
+                                <span className="chat_header_msg">
                                     { this.props.header_message }
                                 </span>
                             </div>
@@ -38,7 +38,7 @@ class ChatDialogueEntry extends React.Component {
                     </div>
                 </Link>
 
-                <div class="chat_element"><hr/></div>
+                <div className="chat_element"><hr/></div>
             </div>
             
             

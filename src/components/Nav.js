@@ -10,7 +10,7 @@ class Nav extends React.Component {
 
     render() {
         return (
-            <div class="narrow_column">
+            <div className="narrow_column">
                 <center>
                     <div id="personal_info_bar">
                         <div id="avatar_frame"></div>
@@ -19,7 +19,7 @@ class Nav extends React.Component {
                         </div>
                     </div>
                     
-                    <ul class="horizontal_menu">
+                    <ul className="horizontal_menu">
                         <li>Settings</li>
                         <li>|</li>
                         <li>Exit</li>
