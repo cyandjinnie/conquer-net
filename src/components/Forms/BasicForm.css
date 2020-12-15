@@ -1,0 +1,58 @@
+.form-wrapper {
+    width: 500px;
+}
+
+.form-wrapper form {
+    padding: 0px 50px;
+}
+
+.form-element-wrapper {
+    padding: 5px 10px;
+}
+
+.form-element-wrapper>div {
+    text-align: left;
+    padding: 7px 5px;
+    font-size: 18px;
+}
+
+.form-element-wrapper input[type="text"], 
+.form-element-wrapper input[type="password"],
+.form-element-wrapper select {
+    border: none;
+    border-bottom: 2px solid #909090;
+    background-color: #f6f6f6;
+    border-radius: 2px;
+    padding: 15px 15px;
+    width: 100%;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.form-element-wrapper input[type="text"]:hover, 
+.form-element-wrapper input[type="password"]:hover,
+.form-element-wrapper input[type="text"]:focus, 
+.form-element-wrapper input[type="password"]:focus,
+.form-element-wrapper select:hover,
+.form-element-wrapper select:active {
+    transform: scale(1.02);
+    background-color: white;
+}
+
+.form-element-wrapper input[type="submit"], .form-element-wrapper button {
+    border-radius: 2px;
+    border: none;
+    background-color: #337dff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 50px;
+    transition: all .3s
+}
+
+.form-element-wrapper input[type="submit"]:hover, .form-element-wrapper button:hover {
+    transform: scale(1.04)
+}
+
+.form-element-wrapper input[type="submit"]:active, .form-element-wrapper button:active {
+    transform: scale(0.97)
+}

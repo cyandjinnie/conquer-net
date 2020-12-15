@@ -1,7 +1,6 @@
 import React from 'react'
 import './Layout.css'
 import Nav from './Nav.js'
-import MainWindow from './MainWindow.js'
 import { Route, Switch } from 'react-router-dom'
 import Chats from './Layouts/Chats.js'
 import Events from './Layouts/Events.js'

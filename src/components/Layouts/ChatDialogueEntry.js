@@ -12,7 +12,7 @@ class ChatDialogueEntry extends React.Component {
     render() {
         return (
             <div>
-                <Link to={"/chats/" + this.props.id}>
+                <Link to={"/chats/peer" + this.props.id}>
                     <div className="chat_dialoque">
                         <div className="chat_image_wrapper">
                             <div className="center">

@@ -28,3 +28,29 @@
 	border: 2px solid #ffffff;
 	background-color: #ffffff;
 }
+
+#move_back_icon_container {
+	padding: 3px 5px;
+}
+
+#move_back_icon  {
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 40px;
+}
+
+#chat_meta_container {
+	padding: 7px 10px;
+}
+
+#chat_meta_container a {
+	text-decoration: underline;
+}
+
+#chat_meta_container #chat_meta_left {
+	float: left;
+}
+
+#chat_meta_container #chat_meta_right {
+	float: right;
+}
