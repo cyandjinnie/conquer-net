@@ -1,5 +1,6 @@
 import React from 'react'
 import './ChatsIndex.css'
+import APIClient from '../../services/APIClient.js'
 
 import ChatDialogueEntry from './ChatDialogueEntry.js'
 
@@ -23,7 +24,15 @@ class ChatsIndex extends React.Component {
                 status_color: "yelllow"
             }
         ]
+
         console.log(this.chat_entries);
+        this.fetchChatEntries()
+    }
+
+    fetchChatEntries() {
+        APIClient.fetch("all-chats", { method: "GET" })
+        .then((response) => ( response.json() ))
+        .then((processed) => { console.log(processed) })
     }
 
     render_single_entry(entry) {

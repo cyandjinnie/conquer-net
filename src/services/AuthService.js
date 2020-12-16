@@ -1,11 +1,19 @@
 import Redux from 'redux'
 
-var AuthService = (function() {
+const AuthService = (function() {
     var authed_ = true;
 
     return {
         isLoggedIn : function() {
             return authed_;
+        },
+
+        authorize : function() {
+
+        },
+
+        logOut : function() {
+
         }
     }
 })()
