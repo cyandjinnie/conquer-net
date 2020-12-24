@@ -4,6 +4,7 @@ import { Switch, Route, Link } from 'react-router-dom'
 import ChatsIndex from './ChatsIndex.js'
 import Chat from './Chat.js'
 import NewChatWindow from './NewChatWindow.js'
+import LoadingAnimation from '../Decorations/LoadingAnimation.js'
 
 import './Chats.css'
 

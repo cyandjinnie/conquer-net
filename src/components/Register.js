@@ -2,10 +2,14 @@ import React from 'react'
 import BasicForm from './Forms/BasicForm.js'
 import { Link } from 'react-router-dom'
 
-import './Register.css'
 import './Layout.css'
 
 class Register extends React.Component {
+    constructor(props) {
+        super(props)
+        this.submitHandler = this.submitHandler.bind(this)
+    }
+
     form_specs = [
         {
             type: "text",
@@ -26,6 +30,10 @@ class Register extends React.Component {
         }
     ];        
 
+    submitHandler(params) {
+        console.log("Submitted!", params)
+    }
+
     render() {
         return (
             <div className="wrapper">
@@ -34,7 +42,7 @@ class Register extends React.Component {
                         <h1>
                             Create an account
                         </h1>
-                        <BasicForm specs={this.form_specs}/>
+                        <BasicForm specs={this.form_specs} onSubmit={this.submitHandler}/>
                         <div id="login-hint">
                             <Link to="/login">
                                 Already registered? Log in

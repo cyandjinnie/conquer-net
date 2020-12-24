@@ -12,7 +12,6 @@
 }
 
 #personal_info_bar>div {
-	display: inline-block;
 	vertical-align: top;
 	font-size: 22px;
 }
@@ -27,4 +26,8 @@ ul.horizontal_menu {
 ul.horizontal_menu li {
 	display: inline;
 	padding: 3px;
+}
+
+.name_field {
+	padding: 5px 0;
 }

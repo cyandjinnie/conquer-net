@@ -13,7 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/register" component={Register}/>
-        <AuthRedirect component={Layout}/>
+        <AuthRedirect component={Layout} alternative={Login}/>
       </Switch>
     </Router>
   );

@@ -1,8 +1,8 @@
 import { Route, Redirect } from 'react-router-dom'
-import AuthService from '../services/AuthService.js'
+import APIClient from '../services/APIClient.js'
 
 function AuthRedirect({ component: Component, ...rest}) {
-    const isLoggedIn = AuthService.isLoggedIn();
+    const isLoggedIn = APIClient.AuthService.isLoggedIn();
 
     return (
         <Route 

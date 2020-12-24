@@ -1,11 +1,16 @@
 import React from 'react'
 import BasicForm from './Forms/BasicForm.js'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+import APIClient from '../services/APIClient.js'
 
-import './Login.css'
 import './Layout.css'
 
 class Login extends React.Component {
+    constructor(props) {
+        super(props)
+        this.submitHandler = this.submitHandler.bind(this)
+    }
+
     form_specs = [
         {
             type: "text",
@@ -24,7 +29,18 @@ class Login extends React.Component {
             label: "Let's go!",
             ref: "submit"
         }
-    ];        
+    ];   
+    
+    async submitHandler(params) {
+        console.log("Submitted!", params)
+        const success = await APIClient.AuthService.logIn(params.username, params.password)
+
+        if (success) {
+            // Redirect to personal screen
+            console.log("LogIn success")
+            this.props.history.push("/")
+        }
+    }
 
     render() {
         return (
@@ -34,7 +50,7 @@ class Login extends React.Component {
                         <h1>
                             Sign in
                         </h1>
-                        <BasicForm specs={this.form_specs}/>
+                        <BasicForm specs={this.form_specs} onSubmit={this.submitHandler}/>
                         <div id="register-hint">
                             <Link to="/register" className="explicit_link">
                                 or register

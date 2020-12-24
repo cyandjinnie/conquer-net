@@ -2,21 +2,23 @@ import React from 'react'
 import './BasicForm.css'
 import '../Layout.css'
 
+
 class BasicForm extends React.Component {
     constructor(props) {
         super(props)
         this.specs = this.props.specs;
+        this.delegated_handler = this.props.onSubmit
 
         this.state = this.getInitialState()
         this.handlers = this.createHandlers();
-
-        console.log(this.state)
-        console.log(this.handlers)
     }
 
     submitHandler(e) {
         e.preventDefault()
-        console.log(this.state)
+        // console.log(this.state)
+
+        this.delegated_handler(this.state)
+
         this.setState(this.getInitialState())
     }
 
@@ -28,7 +30,6 @@ class BasicForm extends React.Component {
             let textfieldHandler = ((e) => {
                 e.preventDefault()
                 this.setState({ [spec.ref] : e.target.value })
-                console.log(e.target.value)
             })
             textfieldHandler = textfieldHandler.bind(this)
 
@@ -52,19 +53,6 @@ class BasicForm extends React.Component {
 
         return initialState
     }
-
-    // Fill in blanks for each form element
-    // componentDidMount() {
-    //     this.specs.forEach((spec) => {
-    //         this.setState((prevState) => { 
-    //             console.log(prevState)
-
-    //             return {
-    //                 [spec.ref] : ""
-    //             } 
-    //         });
-    //     })
-    // }
 
     renderSingleFormElement(specs) {
         switch (specs.type) {

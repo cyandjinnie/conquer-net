@@ -2,6 +2,7 @@ from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.contrib.auth.models import User
 from django.utils.timezone import now
+from datetime import datetime
 
 class Chat(models.Model):
     class TaskStatus(models.TextChoices):
@@ -24,9 +25,9 @@ class Chat(models.Model):
 class Message(models.Model):
     text = models.TextField()
     # datetime = models.DateTimeField()
-    chat = models.ForeignKey(Chat, on_delete=models.CASCADE)
-    from_user = models.ForeignKey(User, on_delete=models.CASCADE)
-    datetime = models.DateTimeField()
+    chat = models.ForeignKey(Chat, on_delete=models.CASCADE, related_name="chat")
+    from_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="sender")
+    datetime = models.DateTimeField(default=datetime.now, blank=True)
 
     def __str__(self):
         return self.text[0:10] + "..."

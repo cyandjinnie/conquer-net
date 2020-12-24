@@ -5,10 +5,6 @@ import './Chats.css'
 import { Link } from 'react-router-dom'
 
 class ChatDialogueEntry extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
